@@ -126,178 +126,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stonetiles_1
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 264
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 32, y: -32}
-        - {x: 32, y: -32}
-        - {x: 32, y: -32}
-        - {x: 32, y: -32}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4bc4a9646a5ec6d47984b895eb91b9cd
-      internalID: 1953722007
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stonetiles_2
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 264
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b49cd19de74e9e946a31c1c3896dd765
-      internalID: 824368775
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stonetiles_3
-      rect:
-        serializedVersion: 2
-        x: 198
-        y: 264
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 073d31780fb87754baf8c8540e88c606
-      internalID: -1661671025
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stonetiles_4
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 264
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b575e1371530a6b4c8e2d4b9eb8fe574
-      internalID: 2016180876
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stonetiles_5
-      rect:
-        serializedVersion: 2
-        x: 330
-        y: 264
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0635455bc6e3e334193ce2cc189741b5
-      internalID: 576730664
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stonetiles_6
-      rect:
-        serializedVersion: 2
-        x: 396
-        y: 264
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97491958ec05151458c2239860d2e1e5
-      internalID: 505943396
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stonetiles_7
-      rect:
-        serializedVersion: 2
-        x: 462
-        y: 264
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f8f3b409a7dea3e47a075cfff5fc8228
-      internalID: -981660155
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stonetiles_8
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 264
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa6938dc41ebde147a7a959df4ecc848
-      internalID: -39460237
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: stonetiles_9
       rect:
         serializedVersion: 2
@@ -309,7 +137,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -25, y: 32}
+        - {x: -26, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
       tessellationDetail: 0
       bones: []
       spriteID: 9506558fd61686748ac178cd9b1e1538
@@ -332,8 +164,8 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -32, y: 32}
-        - {x: -32, y: -32}
-        - {x: 32, y: -32}
+        - {x: -32, y: -23}
+        - {x: 32, y: -23}
         - {x: 32, y: 32}
       tessellationDetail: 0
       bones: []
@@ -355,7 +187,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -10, y: 30}
+        - {x: -32, y: 24}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 30}
       tessellationDetail: 0
       bones: []
       spriteID: 0e1e5e40161fe83449862f70015f34ee
@@ -376,7 +213,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 27, y: -32}
+        - {x: 28, y: 32}
       tessellationDetail: 0
       bones: []
       spriteID: 45d3a9186bdecc6429e9e0b4eb7a8166
@@ -407,90 +248,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stonetiles_14
-      rect:
-        serializedVersion: 2
-        x: 330
-        y: 198
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32b544073eb38814fbac4a0bddc21e02
-      internalID: 1638276786
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stonetiles_15
-      rect:
-        serializedVersion: 2
-        x: 396
-        y: 198
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89d7a2886240f4f4e82da6ddf43cde8e
-      internalID: -1738912089
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stonetiles_16
-      rect:
-        serializedVersion: 2
-        x: 462
-        y: 198
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37327c96fc991f84f8255becd56b553f
-      internalID: 926428182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stonetiles_17
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 198
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d387062620bd5dd4a94640b12a9f394c
-      internalID: 411472675
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: stonetiles_18
       rect:
         serializedVersion: 2
@@ -502,7 +259,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -22, y: 3}
+        - {x: -25, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
       tessellationDetail: 0
       bones: []
       spriteID: e733c7546b97ba940b50daf108ae2451
@@ -523,7 +284,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -27, y: 32}
+        - {x: -25, y: -9}
+        - {x: 32, y: -25}
+        - {x: 32, y: 32}
       tessellationDetail: 0
       bones: []
       spriteID: 335b4730442fb044b88866b939b8b405
@@ -544,7 +309,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -23}
+        - {x: 11, y: -18}
+        - {x: 25, y: 0}
+        - {x: 32, y: 32}
       tessellationDetail: 0
       bones: []
       spriteID: 01944c43b1407454f9392ef966ec779f
@@ -565,7 +335,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 3, y: 32}
+        - {x: -19, y: 32}
+        - {x: -20, y: 25}
+        - {x: -32, y: 25}
+        - {x: -32, y: -32}
+        - {x: 26, y: -32}
+        - {x: 26, y: 7}
+        - {x: 15, y: 22}
       tessellationDetail: 0
       bones: []
       spriteID: 56f21f518396bae46ad3de117296f2b2
@@ -586,7 +364,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -24}
+        - {x: 32, y: -23}
+        - {x: 32, y: 32}
       tessellationDetail: 0
       bones: []
       spriteID: cfbba23d5c1314d4c97c5e514f40e9e1
@@ -607,7 +389,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -25, y: 32}
+        - {x: -27, y: -32}
+        - {x: 28, y: -32}
+        - {x: 27, y: 32}
       tessellationDetail: 0
       bones: []
       spriteID: 9b392ea4ad2c3f84aa1dac8cc8f7789b
@@ -628,7 +414,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -28, y: 18}
+        - {x: -27, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
       tessellationDetail: 0
       bones: []
       spriteID: 61b0beaedfcfee8419dccc742a6d8795
@@ -649,7 +440,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 26, y: -32}
+        - {x: 27, y: 19}
+        - {x: 32, y: 32}
       tessellationDetail: 0
       bones: []
       spriteID: 26e6f0a94137971449572891d0bd3955
@@ -670,7 +466,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -22}
+        - {x: 32, y: -22}
+        - {x: 32, y: 32}
       tessellationDetail: 0
       bones: []
       spriteID: 773b693734b00e648a70e550c1a6bd67
@@ -691,7 +491,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -23, y: 2}
+        - {x: -22, y: -13}
+        - {x: 32, y: -26}
+        - {x: 32, y: 32}
       tessellationDetail: 0
       bones: []
       spriteID: 4959d4a62928c6643bdc050503840530
@@ -712,7 +516,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -24, y: 32}
+        - {x: -30, y: 17}
+        - {x: -24, y: -11}
+        - {x: 9, y: -20}
+        - {x: 23, y: 4}
+        - {x: 32, y: 32}
       tessellationDetail: 0
       bones: []
       spriteID: c6e2606adcf84cd46ba43c4653a408a4
@@ -733,7 +543,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -18.175964, y: 32}
+        - {x: -22, y: 25}
+        - {x: -32, y: 27}
+        - {x: -32, y: -23}
+        - {x: 8, y: -20}
+        - {x: 25, y: -2}
+        - {x: 10, y: 28}
       tessellationDetail: 0
       bones: []
       spriteID: 01b581392a9e8a64e972c23e133436da
@@ -754,7 +571,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 5, y: 28}
+        - {x: -25, y: -7}
+        - {x: -27, y: -32}
+        - {x: 26, y: -32}
+        - {x: 26, y: 2}
       tessellationDetail: 0
       bones: []
       spriteID: 85b6e2e0f49e5c74bb8201c562651ff8
@@ -775,7 +597,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -26, y: -11}
+        - {x: 32, y: -24}
+        - {x: 32, y: 32}
       tessellationDetail: 0
       bones: []
       spriteID: f11e78846fd08a24f99d1f0dc6557ac3
@@ -796,7 +622,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -23}
+        - {x: 10, y: -19}
+        - {x: 32, y: 32}
       tessellationDetail: 0
       bones: []
       spriteID: 59653d21577260143aef7ea31c58088e
@@ -817,53 +647,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -27, y: 15}
+        - {x: -26, y: -32}
+        - {x: 26, y: -32}
+        - {x: 25, y: 13}
+        - {x: 32, y: 32}
       tessellationDetail: 0
       bones: []
       spriteID: 1d73a8fda51cd5f4a92ecad39754044e
       internalID: -1674652812
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stonetiles_34
-      rect:
-        serializedVersion: 2
-        x: 462
-        y: 66
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b328021ea0205a64392e9c68eaabcabb
-      internalID: -1416846636
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stonetiles_35
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 66
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b9c929d8bd42e434b99a4def3064f7d5
-      internalID: 839808992
       vertices: []
       indices: 
       edges: []
@@ -881,10 +675,11 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -32, y: 32}
-        - {x: -32, y: -32}
-        - {x: 32, y: -32}
-        - {x: 32, y: 32}
+      - - {x: 10, y: 27}
+        - {x: -25, y: -2}
+        - {x: -22, y: -14}
+        - {x: 11, y: -16}
+        - {x: 23, y: 0}
       tessellationDetail: 0
       bones: []
       spriteID: 893f8deaf6bbdb54cb6ee60ef210fce6
@@ -905,158 +700,16 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -20, y: -12}
+        - {x: 6, y: -21}
+        - {x: 22, y: -1}
+        - {x: 32, y: 32}
       tessellationDetail: 0
       bones: []
       spriteID: c55b6d6bf088f0f42a3b0ad74d37487f
       internalID: -448990347
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stonetiles_38
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09d03719f18a1804ba278e5b07b89871
-      internalID: -1514893960
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stonetiles_39
-      rect:
-        serializedVersion: 2
-        x: 198
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e84a7baeccc0c89409998e0c4d8cfe61
-      internalID: 129604206
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stonetiles_40
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f055d933b4e47df478fea18bb15b2862
-      internalID: -234342728
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stonetiles_41
-      rect:
-        serializedVersion: 2
-        x: 330
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c7051200a2ecd9a4b80276dee61844bc
-      internalID: -2073054577
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stonetiles_42
-      rect:
-        serializedVersion: 2
-        x: 396
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 34950785d54af2c4ab58fb7afdf96c66
-      internalID: -351502089
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stonetiles_43
-      rect:
-        serializedVersion: 2
-        x: 462
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba1db388ea465d343b10292bcb10f226
-      internalID: -1027970022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stonetiles_44
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f721a3241e194c499e59e25b3ac9f9f
-      internalID: -1827735257
       vertices: []
       indices: 
       edges: []
