@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\Swarm\SwarmMovement.cs" />
     <Compile Include="Assets\Scripts\Swarm\Swarmite.cs" />
     <Compile Include="Assets\Scripts\Swarm\Head_Swarmite.cs" />
+    <Compile Include="Assets\Scripts\BadgerFSM\deadsound.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

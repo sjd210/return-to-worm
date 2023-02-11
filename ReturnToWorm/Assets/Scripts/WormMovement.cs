@@ -7,7 +7,7 @@ public class WormMovement : MonoBehaviour
 
     public float max_speed = 3f;
     public float max_acceleration = 1f;
-
+    public float speed = 1f;
     //dv = a * Time.FixedDeltaTime
     //drag = 1 - a * Time.FixedDeltaTime / v_max
 
@@ -18,7 +18,7 @@ public class WormMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        current_direction = new Vector2(1,0);
+        //current_direction = new Vector2(1,0);
     }
 
     void Update()
