@@ -5,17 +5,6 @@ using UnityEngine;
 public class WormGrow : MonoBehaviour
 {
     public WormTail wormTail;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
