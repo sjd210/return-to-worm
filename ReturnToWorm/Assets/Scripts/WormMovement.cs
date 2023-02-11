@@ -5,12 +5,21 @@ using UnityEngine;
 public class WormMovement : MonoBehaviour
 {
 
-    public float speed = 3f;
+    public float max_speed = 3f;
+    public float max_acceleration = 1f;
+
+    //dv = a * Time.FixedDeltaTime
+    //drag = 1 - a * Time.FixedDeltaTime / v_max
+
     public float rotationSpeed = 200f;
-    public bool rotating = true;
-    public GameObject head;
-    
     float velX = 0f;
+    private Rigidbody2D rb;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        current_direction = new Vector2(1,0);
+    }
 
     void Update()
     {
