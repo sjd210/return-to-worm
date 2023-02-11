@@ -18,6 +18,11 @@ public class WormTail : MonoBehaviour
     void Start()
     {
         positions.Add(wormTailGfx.position);
+        AddTail();
+        AddTail();
+        AddTail();
+        AddTail();
+        AddTail();
     }
 
     void Update()

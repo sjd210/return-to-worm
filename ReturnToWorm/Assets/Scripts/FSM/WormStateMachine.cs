@@ -5,7 +5,6 @@ using UnityEngine;
 public class WormStateMachine : MonoBehaviour
 {
     public WormState currentState;
-
     void Start()
     {
         currentState = GetInitialState();

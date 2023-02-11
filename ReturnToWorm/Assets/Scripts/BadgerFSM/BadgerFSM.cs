@@ -12,6 +12,8 @@ namespace BadgerFSM
 
         public Animator animator;
 
+        public GameObject wormSpawInstance;
+
         [HideInInspector]
         public GameObject worm;
 
@@ -45,6 +47,9 @@ namespace BadgerFSM
         public void MakeBlood()
         {
             Instantiate(blood, transform.position, Quaternion.identity);
+            Instantiate(wormSpawInstance, transform.position, Quaternion.identity);
+            Instantiate(wormSpawInstance, transform.position, Quaternion.identity);
+            Instantiate(wormSpawInstance, transform.position, Quaternion.identity);
         }
 
         private void OnTriggerEnter2D(Collider2D other)
