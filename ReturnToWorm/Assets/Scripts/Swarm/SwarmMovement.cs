@@ -18,7 +18,7 @@ public class SwarmMovement : MonoBehaviour
     public float close_constant = 1.5f;
     public float very_close_constant = 1f;
     public float repulsion_constant = 0.1f;
-    public float high_repulsion_constant = 0.5f;
+    public float high_repulsion_constant = 1f;
     public float far_constant = 3f;
     public float attraction_constant = 0.1f;
 
@@ -31,7 +31,7 @@ public class SwarmMovement : MonoBehaviour
     void Swarm_Update_A(){
         for(int i = 1; i < swarm.Count; i++){//skip first element because don't mess with the head
 
-            for(int j = 1; j < swarm.Count; j++){
+            for(int j = 0; j < swarm.Count; j++){
 
                 if(i == j) continue;
 
@@ -52,7 +52,7 @@ public class SwarmMovement : MonoBehaviour
                     continue;
                 }
 
-                swarm[i].rb.velocity =  0.9f*swarm[i].rb.velocity + 0.1f*swarm[j].rb.velocity; 
+                swarm[i].rb.velocity =  0.95f*swarm[i].rb.velocity + 0.05f*swarm[j].rb.velocity; 
             }
 
             Vector2 x = swarm[0].rb.position - swarm[i].rb.position;
