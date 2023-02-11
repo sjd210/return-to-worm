@@ -254,9 +254,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 95523847
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: b6900e56a707fc74eba9c20be0833172, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -780,6 +780,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wormTailGfx: {fileID: 407632083}
   circleDiameter: 0.48
+  tailSprite: {fileID: -240991146, guid: 6df4bb2fd98e60045940b1633d36b148, type: 3}
+  middleSprite: {fileID: 1480986421, guid: 6df4bb2fd98e60045940b1633d36b148, type: 3}
+  parentWorm: {fileID: 1975508681}
+  wormHead: {fileID: 1991066290}
 --- !u!114 &1975508686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -794,6 +798,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   rotationSpeed: 200
+  rotating: 1
+  head: {fileID: 1991066289}
 --- !u!4 &1975508687
 Transform:
   m_ObjectHideFlags: 0
@@ -905,6 +911,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1991066290}
   - component: {fileID: 1991066291}
+  - component: {fileID: 1991066292}
   m_Layer: 0
   m_Name: WormHeadGfx
   m_TagString: Untagged
@@ -965,10 +972,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: b6900e56a707fc74eba9c20be0833172, type: 3}
+  m_SortingLayerID: 95523847
+  m_SortingLayer: 1
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 713ceff35cabaac47af845bcee32e294, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -979,3 +986,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1991066292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991066289}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 525ceaacbffba93449e5a59a21d4025d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  rotationSpeed: 200
+  rotating: 0
+  head: {fileID: 0}
