@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1918ea23c2c68784ab50ff0eed0472b0
+guid: 97bf369ff7f58484b82d480234fffdc0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 12
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -101,857 +101,962 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Badger_0
+      name: stonetiles_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 224
-        width: 32
-        height: 32
+        y: 264
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 358ddc3cf45504649aa81062f6fe2dde
-      internalID: 1931894162
+      spriteID: 57f066a8cec6a34488747b9e5d39f07b
+      internalID: 770602600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_1
+      name: stonetiles_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 224
-        width: 32
-        height: 32
+        x: 66
+        y: 264
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
       tessellationDetail: 0
       bones: []
-      spriteID: 123d87377dba1f84fb4708c08463cb3f
-      internalID: -534487455
+      spriteID: 4bc4a9646a5ec6d47984b895eb91b9cd
+      internalID: 1953722007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_2
+      name: stonetiles_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 224
-        width: 32
-        height: 32
+        x: 132
+        y: 264
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9af361aa80fcdd4d82be9f5e2569536
-      internalID: 821822978
+      spriteID: b49cd19de74e9e946a31c1c3896dd765
+      internalID: 824368775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_3
+      name: stonetiles_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 224
-        width: 32
-        height: 32
+        x: 198
+        y: 264
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f56291cd8fbc9a419cbfbbb28403830
-      internalID: -109062526
+      spriteID: 073d31780fb87754baf8c8540e88c606
+      internalID: -1661671025
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_4
+      name: stonetiles_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
-        width: 32
-        height: 32
+        x: 264
+        y: 264
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ec484284deee6441a08254a0d1e41dc
-      internalID: -1370049445
+      spriteID: b575e1371530a6b4c8e2d4b9eb8fe574
+      internalID: 2016180876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_5
+      name: stonetiles_5
       rect:
         serializedVersion: 2
-        x: 32
-        y: 192
-        width: 32
-        height: 32
+        x: 330
+        y: 264
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da433f293c038d74991caab004c9cd4a
-      internalID: 1559791391
+      spriteID: 0635455bc6e3e334193ce2cc189741b5
+      internalID: 576730664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_6
+      name: stonetiles_6
       rect:
         serializedVersion: 2
-        x: 64
-        y: 192
-        width: 32
-        height: 32
+        x: 396
+        y: 264
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7e6769a180284445ba08205b67da326
-      internalID: 1845517511
+      spriteID: 97491958ec05151458c2239860d2e1e5
+      internalID: 505943396
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_7
+      name: stonetiles_7
       rect:
         serializedVersion: 2
-        x: 96
-        y: 192
-        width: 32
-        height: 32
+        x: 462
+        y: 264
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07c38788b3e513840b65f7b9b2ae6ea0
-      internalID: 1666924440
+      spriteID: f8f3b409a7dea3e47a075cfff5fc8228
+      internalID: -981660155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_8
+      name: stonetiles_8
       rect:
         serializedVersion: 2
-        x: 128
-        y: 192
-        width: 32
-        height: 32
+        x: 528
+        y: 264
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1d3bbadd643a17429f4cf97f02a8380
-      internalID: -786133470
+      spriteID: fa6938dc41ebde147a7a959df4ecc848
+      internalID: -39460237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_9
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e7385858cb733646bc944280c53fce9
-      internalID: -148597053
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Badger_10
+      name: stonetiles_9
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
-        width: 32
-        height: 32
+        y: 198
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83fde74568e495b4d9cf0f70b74badea
-      internalID: -159856284
+      spriteID: 9506558fd61686748ac178cd9b1e1538
+      internalID: -1356990759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_11
+      name: stonetiles_10
       rect:
         serializedVersion: 2
-        x: 32
-        y: 160
-        width: 32
-        height: 32
+        x: 66
+        y: 198
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
       tessellationDetail: 0
       bones: []
-      spriteID: 65fee23537e88954ca9697d304b0c3db
-      internalID: -307124767
+      spriteID: 81cf5080b7863254dae8d66e990c6bde
+      internalID: -133698469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_12
+      name: stonetiles_11
       rect:
         serializedVersion: 2
-        x: 64
-        y: 160
-        width: 32
-        height: 32
+        x: 132
+        y: 198
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f7501fa86677df41a771fb49392eb9f
-      internalID: -1385205421
+      spriteID: 0e1e5e40161fe83449862f70015f34ee
+      internalID: -1003312683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_13
+      name: stonetiles_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
-        width: 32
-        height: 32
+        x: 198
+        y: 198
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5040eb22e6b9de841bad539a917fb8a3
-      internalID: -723533389
+      spriteID: 45d3a9186bdecc6429e9e0b4eb7a8166
+      internalID: 657758790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_14
+      name: stonetiles_13
       rect:
         serializedVersion: 2
-        x: 32
-        y: 128
-        width: 32
-        height: 32
+        x: 264
+        y: 198
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90a54d1a235a079478aca088c46ff607
-      internalID: 1892536608
+      spriteID: 535ff713fac6eae4a8cd7a259fc09e59
+      internalID: -1880292891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_15
+      name: stonetiles_14
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
-        width: 32
-        height: 32
+        x: 330
+        y: 198
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb4669d7ca1c47b47840e0496675dd36
-      internalID: -534971114
+      spriteID: 32b544073eb38814fbac4a0bddc21e02
+      internalID: 1638276786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_16
+      name: stonetiles_15
       rect:
         serializedVersion: 2
-        x: 96
-        y: 128
-        width: 32
-        height: 32
+        x: 396
+        y: 198
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41fc5033feb813740bd5266fef13ae6c
-      internalID: -599215059
+      spriteID: 89d7a2886240f4f4e82da6ddf43cde8e
+      internalID: -1738912089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_17
+      name: stonetiles_16
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 32
-        height: 32
+        x: 462
+        y: 198
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 224b2d7923b8dc545b1bac6489325afc
-      internalID: -891892831
+      spriteID: 37327c96fc991f84f8255becd56b553f
+      internalID: 926428182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_18
+      name: stonetiles_17
       rect:
         serializedVersion: 2
-        x: 160
-        y: 128
-        width: 32
-        height: 32
+        x: 528
+        y: 198
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a7f11419a304a14aaca6f0bd73d5ef1
-      internalID: 2124887466
+      spriteID: d387062620bd5dd4a94640b12a9f394c
+      internalID: 411472675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_19
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 55a0fc18bb5acad47ace13140ec20030
-      internalID: 110171489
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Badger_20
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb9cf4fd6b671234ba1a6c5fefe751c8
-      internalID: 983328796
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Badger_21
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f25fa66bb3f90074c9a7fc145d200b98
-      internalID: 1195289537
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Badger_22
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4f0b53f0380e6440b3009ec396bb0e7
-      internalID: 502238543
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Badger_23
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f4174aa8fd1500b41a617be064fec82e
-      internalID: -758326929
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Badger_24
+      name: stonetiles_18
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 32
-        height: 32
+        y: 132
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26407ed922c3aaa408e65b5f3115e7e4
-      internalID: 1419138059
+      spriteID: e733c7546b97ba940b50daf108ae2451
+      internalID: 2134583072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_25
+      name: stonetiles_19
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
+        x: 66
+        y: 132
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88f0f57af8d0b7c428241d53551088c4
-      internalID: -1624020944
+      spriteID: 335b4730442fb044b88866b939b8b405
+      internalID: 907426975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_26
+      name: stonetiles_20
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
+        x: 132
+        y: 132
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0bc8f9736ffe5d4e80426a9a320ea9c
-      internalID: -1149949072
+      spriteID: 01944c43b1407454f9392ef966ec779f
+      internalID: 277513846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_27
+      name: stonetiles_21
       rect:
         serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
+        x: 198
+        y: 132
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38ba2a90338bb5640a2696ab746446cb
-      internalID: -44983533
+      spriteID: 56f21f518396bae46ad3de117296f2b2
+      internalID: -213027040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_28
+      name: stonetiles_22
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
-        width: 32
-        height: 32
+        x: 264
+        y: 132
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1911358d71f597d4c8ffb2e77f9b4466
-      internalID: -1291836799
+      spriteID: cfbba23d5c1314d4c97c5e514f40e9e1
+      internalID: -1412815839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_29
+      name: stonetiles_23
       rect:
         serializedVersion: 2
-        x: 160
-        y: 64
-        width: 32
-        height: 32
+        x: 330
+        y: 132
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00dfb11334ff5e745a33642c78810964
-      internalID: 2106461405
+      spriteID: 9b392ea4ad2c3f84aa1dac8cc8f7789b
+      internalID: 2048090185
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_30
+      name: stonetiles_24
       rect:
         serializedVersion: 2
-        x: 192
-        y: 64
-        width: 32
-        height: 32
+        x: 396
+        y: 132
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abf56b807a258d2459ce5f36e99751aa
-      internalID: -1899104406
+      spriteID: 61b0beaedfcfee8419dccc742a6d8795
+      internalID: -1796584900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_31
+      name: stonetiles_25
       rect:
         serializedVersion: 2
-        x: 224
-        y: 64
-        width: 32
-        height: 32
+        x: 462
+        y: 132
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ade4f61d6c9bc3345b77da5e91dcbf91
-      internalID: 350073892
+      spriteID: 26e6f0a94137971449572891d0bd3955
+      internalID: 434174103
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_32
+      name: stonetiles_26
       rect:
         serializedVersion: 2
-        x: 256
-        y: 64
-        width: 32
-        height: 32
+        x: 528
+        y: 132
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bb4f5fc90494824597acf24dd4a1c06
-      internalID: -757933782
+      spriteID: 773b693734b00e648a70e550c1a6bd67
+      internalID: -1327077988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_33
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 55cd5ed45efec32449fe6c6ce11d7fa4
-      internalID: -633607058
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Badger_34
+      name: stonetiles_27
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 32
-        height: 32
+        y: 66
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f94c362777b94f4bb6aba51c64f2437
-      internalID: 1050129236
+      spriteID: 4959d4a62928c6643bdc050503840530
+      internalID: -1495559303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_35
+      name: stonetiles_28
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
+        x: 66
+        y: 66
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f23d7d37dd4e86b4d91ab3906743c578
-      internalID: -1077374071
+      spriteID: c6e2606adcf84cd46ba43c4653a408a4
+      internalID: -1793944838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_36
+      name: stonetiles_29
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b581392a9e8a64e972c23e133436da
+      internalID: -422650763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stonetiles_30
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b6e2e0f49e5c74bb8201c562651ff8
+      internalID: 293903638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stonetiles_31
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11e78846fd08a24f99d1f0dc6557ac3
+      internalID: -135504438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stonetiles_32
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59653d21577260143aef7ea31c58088e
+      internalID: -1630040310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stonetiles_33
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d73a8fda51cd5f4a92ecad39754044e
+      internalID: -1674652812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stonetiles_34
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b328021ea0205a64392e9c68eaabcabb
+      internalID: -1416846636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stonetiles_35
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c929d8bd42e434b99a4def3064f7d5
+      internalID: 839808992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stonetiles_36
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
       tessellationDetail: 0
       bones: []
-      spriteID: a269496c099851943a4d1826dfe1d4e6
-      internalID: -1108776216
+      spriteID: 893f8deaf6bbdb54cb6ee60ef210fce6
+      internalID: -439267260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_37
+      name: stonetiles_37
       rect:
         serializedVersion: 2
-        x: 32
+        x: 66
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9afc5a00e96d23042a94bf70f6a26d21
-      internalID: 149579430
+      spriteID: c55b6d6bf088f0f42a3b0ad74d37487f
+      internalID: -448990347
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_38
+      name: stonetiles_38
       rect:
         serializedVersion: 2
-        x: 64
+        x: 132
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b88ce70d53a4ce45aa2ca2aa8d571d0
-      internalID: 1162554955
+      spriteID: 09d03719f18a1804ba278e5b07b89871
+      internalID: -1514893960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Badger_39
+      name: stonetiles_39
       rect:
         serializedVersion: 2
-        x: 96
+        x: 198
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19a3440877c96db4798daffc661db078
-      internalID: 1132683863
+      spriteID: e84a7baeccc0c89409998e0c4d8cfe61
+      internalID: 129604206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stonetiles_40
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f055d933b4e47df478fea18bb15b2862
+      internalID: -234342728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stonetiles_41
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7051200a2ecd9a4b80276dee61844bc
+      internalID: -2073054577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stonetiles_42
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34950785d54af2c4ab58fb7afdf96c66
+      internalID: -351502089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stonetiles_43
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1db388ea465d343b10292bcb10f226
+      internalID: -1027970022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stonetiles_44
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f721a3241e194c499e59e25b3ac9f9f
+      internalID: -1827735257
       vertices: []
       indices: 
       edges: []
@@ -967,46 +1072,51 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Badger_5: 1559791391
-      Badger_8: -786133470
-      Badger_30: -1899104406
-      Badger_25: -1624020944
-      Badger_3: -109062526
-      Badger_11: -307124767
-      Badger_24: 1419138059
-      Badger_32: -757933782
-      Badger_6: 1845517511
-      Badger_9: -148597053
-      Badger_37: 149579430
-      Badger_18: 2124887466
-      Badger_39: 1132683863
-      Badger_34: 1050129236
-      Badger_4: -1370049445
-      Badger_20: 983328796
-      Badger_26: -1149949072
-      Badger_7: 1666924440
-      Badger_16: -599215059
-      Badger_10: -159856284
-      Badger_38: 1162554955
-      Badger_17: -891892831
-      Badger_27: -44983533
-      Badger_22: 502238543
-      Badger_31: 350073892
-      Badger_2: 821822978
-      Badger_28: -1291836799
-      Badger_29: 2106461405
-      Badger_19: 110171489
-      Badger_36: -1108776216
-      Badger_13: -723533389
-      Badger_1: -534487455
-      Badger_14: 1892536608
-      Badger_33: -633607058
-      Badger_35: -1077374071
-      Badger_23: -758326929
-      Badger_15: -534971114
-      Badger_12: -1385205421
-      Badger_0: 1931894162
-      Badger_21: 1195289537
+      stonetiles_31: -135504438
+      stonetiles_29: -422650763
+      stonetiles_13: -1880292891
+      stonetiles_3: -1661671025
+      stonetiles_4: 2016180876
+      stonetiles_34: -1416846636
+      stonetiles_22: -1412815839
+      stonetiles_27: -1495559303
+      stonetiles_19: 907426975
+      stonetiles_7: -981660155
+      stonetiles_8: -39460237
+      stonetiles_24: -1796584900
+      stonetiles_40: -234342728
+      stonetiles_15: -1738912089
+      stonetiles_43: -1027970022
+      stonetiles_9: -1356990759
+      stonetiles_32: -1630040310
+      stonetiles_36: -439267260
+      stonetiles_1: 1953722007
+      stonetiles_20: 277513846
+      stonetiles_11: -1003312683
+      stonetiles_5: 576730664
+      stonetiles_28: -1793944838
+      stonetiles_38: -1514893960
+      stonetiles_35: 839808992
+      stonetiles_41: -2073054577
+      stonetiles_42: -351502089
+      stonetiles_0: 770602600
+      stonetiles_30: 293903638
+      stonetiles_6: 505943396
+      stonetiles_16: 926428182
+      stonetiles_2: 824368775
+      stonetiles_23: 2048090185
+      stonetiles_33: -1674652812
+      stonetiles_18: 2134583072
+      stonetiles_14: 1638276786
+      stonetiles_25: 434174103
+      stonetiles_39: 129604206
+      stonetiles_12: 657758790
+      stonetiles_44: -1827735257
+      stonetiles_21: -213027040
+      stonetiles_17: 411472675
+      stonetiles_26: -1327077988
+      stonetiles_37: -448990347
+      stonetiles_10: -133698469
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
