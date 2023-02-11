@@ -12,7 +12,7 @@ public class Head_Swarmite : Swarmite
 
     // Update is called once per frame
 
-    public float speed = 2f;
+    public float speed = 0.8f;
     void FixedUpdate()
     {
         rb.velocity *= 0.90f;
