@@ -58,7 +58,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -123,10 +123,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0105d917b4718c4085245afee51a036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blood: {fileID: 0}
+  blood: {fileID: 4568196754374333148, guid: 80c47beefd87ff9408f7ee9a4645b705, type: 3}
   rb: {fileID: 6480673099551411341}
   animator: {fileID: 6480673099551411334}
-  wormSpawInstance: {fileID: 0}
+  wormSpawInstance: {fileID: 3097069838646407184, guid: 467571058f10fe3488231b7c253fd43f, type: 3}
   worm: {fileID: 0}
 --- !u!58 &6480673099551411333
 CircleCollider2D:
