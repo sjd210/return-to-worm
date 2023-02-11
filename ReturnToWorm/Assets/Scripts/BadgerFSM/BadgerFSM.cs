@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,7 @@ namespace BadgerFSM
 {
     public class BadgerFSM : WormStateMachine
     {
+        public GameObject blood;
         public Rigidbody2D rb;
 
         public Animator animator;
@@ -40,7 +42,10 @@ namespace BadgerFSM
             return idleState;
         }
 
-
+        public void MakeBlood()
+        {
+            Instantiate(blood, transform.position, Quaternion.identity);
+        }
 
         private void OnTriggerEnter2D(Collider2D other)
         {

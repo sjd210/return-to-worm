@@ -46,3 +46,6 @@ TagManager:
   - name: Worm
     uniqueID: 95523847
     locked: 0
+  - name: Blood
+    uniqueID: 3714496417
+    locked: 0
