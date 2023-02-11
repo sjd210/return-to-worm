@@ -28,6 +28,9 @@ namespace BadgerFSM
         [HideInInspector]
         public Dead deadState;
 
+        public AudioSource blood_noise;
+        public AudioClip _blood_noise;
+
         private void Awake()
         {
             idleState = new Idle(this);
@@ -50,6 +53,8 @@ namespace BadgerFSM
             Instantiate(wormSpawInstance, transform.position, Quaternion.identity);
             Instantiate(wormSpawInstance, transform.position, Quaternion.identity);
             Instantiate(wormSpawInstance, transform.position, Quaternion.identity);
+            blood_noise = GetComponent<AudioSource>();
+            blood_noise.PlayOneShot(_blood_noise, 0.7F);
         }
 
         private void OnTriggerEnter2D(Collider2D other)
