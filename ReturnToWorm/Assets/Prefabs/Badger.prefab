@@ -123,8 +123,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0105d917b4718c4085245afee51a036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blood: {fileID: 0}
   rb: {fileID: 6480673099551411341}
   animator: {fileID: 6480673099551411334}
+  wormSpawInstance: {fileID: 0}
   worm: {fileID: 0}
 --- !u!58 &6480673099551411333
 CircleCollider2D:
