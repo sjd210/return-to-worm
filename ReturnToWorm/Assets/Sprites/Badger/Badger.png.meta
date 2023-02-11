@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 12
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -967,9 +967,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Badger_21: 1195289537
       Badger_5: 1559791391
       Badger_8: -786133470
+      Badger_33: -633607058
       Badger_25: -1624020944
       Badger_3: -109062526
       Badger_11: -307124767
@@ -994,19 +994,19 @@ TextureImporter:
       Badger_31: 350073892
       Badger_2: 821822978
       Badger_28: -1291836799
+      Badger_29: 2106461405
       Badger_19: 110171489
       Badger_36: -1108776216
       Badger_13: -723533389
-      Badger_29: 2106461405
-      Badger_35: -1077374071
-      Badger_23: -758326929
       Badger_1: -534487455
       Badger_14: 1892536608
+      Badger_23: -758326929
+      Badger_35: -1077374071
       Badger_0: 1931894162
-      Badger_33: -633607058
       Badger_15: -534971114
       Badger_12: -1385205421
       Badger_30: -1899104406
+      Badger_21: 1195289537
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -4,10 +4,24 @@ using UnityEngine;
 
 namespace BadgerFSM
 {
-    public class Idle : BaseState
+    public class Idle : WormState
     {
-        public Idle(StateMachine stateMachine) : base("Idle", stateMachine) { }
+        public BadgerFSM stateMachine;
+        public Idle(BadgerFSM stateMachine) : base("Idle", stateMachine)
+        {
+            this.stateMachine = stateMachine;
+        }
 
+        public override void OnWormTouched(Collider2D collider2D)
+        {
+            base.OnWormTouched(collider2D);
+            stateMachine.ChangeState(stateMachine.deadState);
+        }
 
+        public override void OnWormSeen(Collider2D collider2D)
+        {
+            base.OnWormTouched(collider2D);
+            stateMachine.ChangeState(stateMachine.runningState);
+        }
     }
 }

@@ -4,10 +4,22 @@ using UnityEngine;
 
 namespace BadgerFSM
 {
-    public class Attack : BaseState
+    public class Attack : WormState
     {
-        public Attack(StateMachine stateMachine) : base("Attack", stateMachine) { }
+        BadgerFSM stateMachine;
+        public Attack(BadgerFSM stateMachine) : base("Attack", stateMachine) { }
 
+        public override void Enter()
+        {
+            base.Enter();
+            stateMachine.animator.SetTrigger("Dead");
 
+        }
+
+        public override void OnWormTouched(Collider2D collider2D)
+        {
+            base.OnWormTouched(collider2D);
+            stateMachine.ChangeState(stateMachine.deadState);
+        }
     }
 }

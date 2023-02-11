@@ -4,9 +4,11 @@ using UnityEngine;
 
 namespace BadgerFSM
 {
-    public class BadgerFSM : StateMachine
+    public class BadgerFSM : WormStateMachine
     {
         public Rigidbody2D rb;
+
+        public Animator animator;
 
         [HideInInspector]
         public GameObject worm;
@@ -32,7 +34,7 @@ namespace BadgerFSM
 
         }
 
-        protected override BaseState GetInitialState()
+        protected override WormState GetInitialState()
         {
             
             return idleState;
@@ -45,7 +47,7 @@ namespace BadgerFSM
             if (other.gameObject.CompareTag("Worm"))
             {
                 worm = other.gameObject;
-                ChangeState(deadState);
+                currentState.OnWormTouched(other);                
             }
            
         }
@@ -53,7 +55,7 @@ namespace BadgerFSM
         public void OnWormSeen(Collider2D other)
         {
             worm = other.gameObject;
-            ChangeState(runningState);
+            currentState.OnWormSeen(other);
         }
     }
 }

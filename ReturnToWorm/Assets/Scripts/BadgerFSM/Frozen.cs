@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace BadgerFSM
 {
-    public class Frozen : BaseState
+    public class Frozen : WormState
     {
         private BadgerFSM stateMachine;
 
@@ -16,6 +16,12 @@ namespace BadgerFSM
         {
             base.UpdatePhysics();
             stateMachine.rb.velocity = new Vector2(0,0);
+        }
+
+        public override void OnWormTouched(Collider2D collider2D)
+        {
+            base.OnWormTouched(collider2D);
+            stateMachine.ChangeState(stateMachine.deadState);
         }
 
     }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace BadgerFSM
 {
-    public class Dead : BaseState
+    public class Dead : WormState
     {
         private BadgerFSM stateMachine;
 
@@ -15,8 +15,17 @@ namespace BadgerFSM
         public override void Enter()
         {
             base.Enter();
-            stateMachine.rb.velocity = new Vector2(0, 0);
+            stateMachine.rb.velocity =  Vector2.zero;
+            stateMachine.rb.angularVelocity = 0;
+            stateMachine.animator.SetTrigger("Dead");
 
+        }
+
+        public override void UpdatePhysics()
+        {
+            base.UpdatePhysics();
+            stateMachine.rb.velocity = Vector2.zero;
+            stateMachine.rb.angularVelocity = 0;
         }
         public override bool Exit()
         {
