@@ -9,17 +9,15 @@ public class WormCollider : MonoBehaviour
 
     private void Start()
     {
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        foreach (GameObject enemy in enemies)
-        {
-            Physics2D.IgnoreCollision(enemy.GetComponent<Collider2D>(), GetComponent<Collider2D>());
-        }
+        string[] prohibitedCollisions = {"Enemy", "Wall", "Worm"};
 
-        GameObject[] b = GameObject.FindGameObjectsWithTag("Wall");
-        foreach (GameObject bg in b)
+        foreach (string tag in prohibitedCollisions)
         {
-            Debug.Log(bg);
-            Physics2D.IgnoreCollision(bg.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+            GameObject[] items = GameObject.FindGameObjectsWithTag(tag);
+            foreach (GameObject item in items)
+            {
+                Physics2D.IgnoreCollision(item.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+            }
         }
     }
 }
