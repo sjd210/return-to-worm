@@ -616,21 +616,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3097069838646407184, guid: 467571058f10fe3488231b7c253fd43f, type: 3}
   m_PrefabInstance: {fileID: 3097069836827078361}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1975508687}
-  - component: {fileID: 1975508686}
-  - component: {fileID: 1975508685}
-  - component: {fileID: 1975508684}
-  - component: {fileID: 1975508683}
-  - component: {fileID: 1975508682}
-  m_Layer: 0
-  m_Name: Worm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!50 &1975508682
 Rigidbody2D:
   serializedVersion: 4
@@ -693,8 +678,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9af289e919c990d4bbb0e8df912fafff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wormTailGfx: {fileID: 407632083}
+  wormTailGfx: {fileID: 0}
   circleDiameter: 0.48
+  tailSprite: {fileID: 0}
+  middleSprite: {fileID: 0}
+  parentWorm: {fileID: 0}
 --- !u!114 &1975508686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -707,25 +695,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525ceaacbffba93449e5a59a21d4025d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  max_speed: 3
+  max_acceleration: 1
   speed: 3
   rotationSpeed: 200
---- !u!4 &1975508687
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1975508681}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1991066290}
-  - {fileID: 407632083}
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1980592792
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,6 +711,7 @@ GameObject:
   - component: {fileID: 1980592794}
   - component: {fileID: 1980592796}
   - component: {fileID: 1980592793}
+  - component: {fileID: 1980592797}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -825,6 +799,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1980592794}
   worm: {fileID: 1975508681}
+--- !u!114 &1980592797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980592792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &1991066289 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3097069838662298728, guid: 467571058f10fe3488231b7c253fd43f, type: 3}
@@ -842,10 +849,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525ceaacbffba93449e5a59a21d4025d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  max_speed: 3
+  max_acceleration: 1
   speed: 3
   rotationSpeed: 200
-  rotating: 1
-  head: {fileID: 1991066289}
 --- !u!1001 &3097069836827078361
 PrefabInstance:
   m_ObjectHideFlags: 0
