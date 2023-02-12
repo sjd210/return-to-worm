@@ -6,15 +6,16 @@ namespace BadgerFSM
 {
     public class BadgerSeenCollider : MonoBehaviour
     {
-        public BadgerFSM badgerFSM;
+        public GameObject badgerFSM;
 
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.gameObject.CompareTag("Worm"))
             {
-                badgerFSM.OnWormSeen(other);
+                badgerFSM.GetComponent<BadgerFSM>().OnWormSeen(other);
             }
 
+            Debug.Log("AAAAAA");
         }
     }
 }

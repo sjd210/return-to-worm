@@ -8,8 +8,6 @@ public class WormTail : MonoBehaviour
     public Transform wormTailGfx;
     public float circleDiameter;
 
-    public Sprite tailSprite;
-    public Sprite middleSprite;
     public GameObject parentWorm;
 
     private List<Transform> wormTail = new List<Transform>();

@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\BadgerFSM\deadsound.cs" />
     <Compile Include="Assets\Scripts\BadgerFSM\Running.cs" />
     <Compile Include="Assets\Scripts\FSM\BaseState.cs" />
+    <Compile Include="Assets\Scripts\WormCollider.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

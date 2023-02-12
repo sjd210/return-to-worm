@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Target
   - Worm
+  - Box
   layers:
   - Default
   - TransparentFX
@@ -14,11 +15,11 @@ TagManager:
   - Water
   - UI
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Enemy
+  - Rock
+  - Tunnel
+  - Bg
+  - Worm
   - 
   - 
   - 
