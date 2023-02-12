@@ -47,10 +47,12 @@ namespace BadgerFSM
             return idleState;
         }
 
+        public int no_worms = 3;
+
         public void MakeBlood()
         {
             Instantiate(blood, transform.position, Quaternion.identity);
-            swarm.AddWorm(3, transform.position);
+            swarm.AddWorm(no_worms, transform.position);
 
             blood_noise = GetComponent<AudioSource>();
             blood_noise.PlayOneShot(_blood_noise, 0.7F);

@@ -41,7 +41,7 @@ public class WormTail : MonoBehaviour
         for (int i = 0; i < wormTail.Count; i++)
         {
             wormTail[i].position = Vector2.Lerp(positions[i + 1], positions[i], distance / circleDiameter);
-            wormTail[i].localRotation = Quaternion.Euler(0.0f, 0.0f, parentWorm.transform.rotation.z * -1.0f);
+            //wormTail[i].localRotation = Quaternion.Euler(0.0f, 0.0f, parentWorm.transform.rotation.z * -1.0f);
         }
     }
     
