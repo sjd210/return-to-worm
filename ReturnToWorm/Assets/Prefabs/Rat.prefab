@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 25100825}
   m_Layer: 0
   m_Name: RatData
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,6 +109,7 @@ MonoBehaviour:
   worm: {fileID: 0}
   blood_noise: {fileID: 25100826}
   _blood_noise: {fileID: 8300000, guid: 9bf84ca14f0cb414ca4099c0e38972bd, type: 3}
+  no_worms: 3
 --- !u!58 &25100829
 CircleCollider2D:
   m_ObjectHideFlags: 0
