@@ -25,14 +25,15 @@ public class SwarmMovement : MonoBehaviour
 
     // Update is called once per frame
 
-    public float close_constant = 1.5f;
-    public float very_close_constant = 0.5f;
-    public float repulsion_constant = -0.1f;
-    public float high_repulsion_constant = 1f;
-    public float far_constant = 1.5f;
-    public float attraction_constant = 0.3f;
-
-    public float head_attraction_constant = 1f;
+    public float close_distance = 1f;
+    public float very_close_distance = 0.5f;
+    public float far_distance = 1.5f;
+    public float very_far_distance = 2f;
+    public float close_repulsion = 0.1f;
+    public float very_close_repulsion = 0.5f;
+    public float far_attraction = 0.3f;
+    public float very_far_attraction = 0.1f;
+    public float head_attraction = 1f;
     void FixedUpdate()
     {
         Swarm_Update_A();
@@ -77,32 +78,38 @@ public class SwarmMovement : MonoBehaviour
 
                 Vector2 d = swarm[j].rb.position - swarm[i].rb.position;
 
-                if (d.magnitude < very_close_constant)
+                if (d.magnitude < very_close_distance)
                 {
-                    swarm[i].rb.AddForce(-d.normalized * high_repulsion_constant, ForceMode2D.Impulse);
+                    swarm[i].rb.AddForce(-d.normalized * very_close_repulsion, ForceMode2D.Impulse);
                     continue;
                 }
 
-                if (d.magnitude < close_constant)
+                if (d.magnitude < close_distance)
                 {
-                    swarm[i].rb.AddForce(-d.normalized * repulsion_constant, ForceMode2D.Impulse);
+                    swarm[i].rb.AddForce(-d.normalized * close_repulsion, ForceMode2D.Impulse);
                     continue;
                 }
 
-                if (d.magnitude > far_constant)
+                if (d.magnitude > very_far_distance)
                 {
-                    swarm[i].rb.AddForce(d.normalized * attraction_constant, ForceMode2D.Impulse);
+                    swarm[i].rb.AddForce(d.normalized * very_far_attraction, ForceMode2D.Impulse);
                     continue;
                 }
 
-                //swarm[i].rb.velocity =  0.95f*swarm[i].rb.velocity + 0.05f*swarm[j].rb.velocity; 
+                if (d.magnitude > far_distance)
+                {
+                    swarm[i].rb.AddForce(d.normalized * far_attraction, ForceMode2D.Impulse);
+                    continue;
+                }
+
+                //swarm[i].rb.velocity =  0.99f*swarm[i].rb.velocity + 0.01f*swarm[j].rb.velocity; 
             }
 
-            //Vector2 x = swarm[0].rb.position - swarm[i].rb.position;
+            Vector2 x = swarm[0].rb.position - swarm[i].rb.position;
 
-            //if(x.magnitude > close_constant){
-            //    swarm[i].rb.AddForce(x.normalized*head_attraction_constant, ForceMode2D.Impulse);
-            //}
+            if(x.magnitude > close_distance){
+                swarm[i].rb.AddForce(x.normalized*head_attraction, ForceMode2D.Impulse);
+            }
 
         }
     }
