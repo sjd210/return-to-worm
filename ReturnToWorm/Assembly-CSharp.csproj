@@ -79,6 +79,10 @@
     <Compile Include="Assets\Scripts\BadgerFSM\Running.cs" />
     <Compile Include="Assets\Scripts\FSM\BaseState.cs" />
     <Compile Include="Assets\Scripts\WormCollider.cs" />
+    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\AotStubs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\link.xml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
