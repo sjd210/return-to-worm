@@ -18,6 +18,8 @@ public class SwarmMovement : MonoBehaviour
 
     public GameObject wormSpawInstance;
 
+    public GameObject bloodSmall;
+
     void Start()
     {
 
@@ -51,6 +53,30 @@ public class SwarmMovement : MonoBehaviour
                 littleWorm.Add(Worm);
                 waitingForSwarm.RemoveAt(i);
             }
+        }
+        int littlWormToBig = 4;
+        if (littleWorm.Count >= littlWormToBig)
+        {
+            int n = littleWorm.Count / littlWormToBig;
+            for (int i = n*littlWormToBig-1; i >= n; i--)
+            {
+                Instantiate(bloodSmall, littleWorm[i].transform.position, Quaternion.identity);
+                Destroy(littleWorm[i].gameObject);
+                swarm.Remove(littleWorm[i]);
+                littleWorm.RemoveAt(i);
+                
+            }
+
+            for (int i = n - 1; i >= 0; i--)
+            {
+                Instantiate(bloodSmall, littleWorm[i].transform.position, Quaternion.identity);
+                littleWorm[i].transform.localScale = new Vector3(0.75f, 0.75f, 0.75f);
+                littleWorm[i].GetComponent<WormTail>().circleDiameter /= 0.4f;
+                bigWorm.Add(littleWorm[i]);
+                littleWorm.RemoveAt(i);
+            }
+
+            
         }
     }
 
