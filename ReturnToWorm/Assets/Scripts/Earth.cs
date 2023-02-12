@@ -14,6 +14,7 @@ public class Earth : MonoBehaviour
 
     // Update is called once per frame
 
+    public float quit_game_countdown = 333f;
     public bool spawn = true;
     public bool delete = false;
     public GameObject wormSpawInstance;
@@ -37,5 +38,7 @@ public class Earth : MonoBehaviour
             max_cooldown = max_cooldown * accelaration;
             worms.Add(Instantiate(wormSpawInstance, transform.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f))).GetComponent<EarthWorm>());
         }
+
+        if(quit_game_countdown > 0f){ quit_game_countdown -= Time.fixedDeltaTime;} else {Application.Quit();}
     }
 }
