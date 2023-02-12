@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 3097069838646407189}
   - component: {fileID: 3097069838646407186}
   - component: {fileID: 3097069838646407187}
+  - component: {fileID: 1205515812283490667}
   m_Layer: 11
   m_Name: Worm
   m_TagString: Worm
@@ -137,8 +138,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 3097069838646407187}
-  max_speed: 3
-  max_acceleration: 1
   speed: 3
   rotationSpeed: 200
 --- !u!114 &3097069838646407188
@@ -155,8 +154,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wormTailGfx: {fileID: 3097069836965795338}
   circleDiameter: 0.48
-  tailSprite: {fileID: -240991146, guid: 6df4bb2fd98e60045940b1633d36b148, type: 3}
-  middleSprite: {fileID: 1480986421, guid: 6df4bb2fd98e60045940b1633d36b148, type: 3}
   parentWorm: {fileID: 3097069838646407184}
 --- !u!58 &3097069838646407189
 CircleCollider2D:
@@ -208,6 +205,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1205515812283490667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3097069838646407184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a17c81d574ff44a4da03e17ada916212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  box: {fileID: 0}
 --- !u!1 &3097069838662298728
 GameObject:
   m_ObjectHideFlags: 0

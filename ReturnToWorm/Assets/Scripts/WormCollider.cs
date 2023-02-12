@@ -5,30 +5,22 @@ using UnityEngine;
 public class WormCollider : MonoBehaviour
 {
 
-    public GameObject box;
+    public GameObject tiles;
 
     private void Start()
     {
-        Physics2D.IgnoreCollision(box.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in enemies)
+        {
+            Physics2D.IgnoreCollision(enemy.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        }
+
+        GameObject[] b = GameObject.FindGameObjectsWithTag("Wall");
+        foreach (GameObject bg in b)
+        {
+            Debug.Log(bg);
+            Physics2D.IgnoreCollision(bg.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        }
     }
-
-    /*private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Box"))
-        {
-            Debug.Log("AAAA");
-            Physics2D.IgnoreCollision(other, GetComponent<Collider2D>());
-        }
-
-    } */
-
-    /*void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Box")
-        {
-            Debug.Log("AAAA");
-           
-        }
-    } */
 }
 

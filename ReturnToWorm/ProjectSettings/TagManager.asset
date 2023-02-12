@@ -7,6 +7,10 @@ TagManager:
   - Target
   - Worm
   - Box
+  - Enemy
+  - Wall
+  - Rock
+  - Bg
   layers:
   - Default
   - TransparentFX
