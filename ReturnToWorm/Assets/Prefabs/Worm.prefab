@@ -135,6 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525ceaacbffba93449e5a59a21d4025d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 3097069838646407187}
   max_speed: 3
   max_acceleration: 1
   speed: 3

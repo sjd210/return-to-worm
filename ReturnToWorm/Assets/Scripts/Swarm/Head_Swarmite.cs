@@ -4,27 +4,25 @@ using UnityEngine;
 
 public class Head_Swarmite : Swarmite
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
+    public float speed = 3f;
+    //dv = a * Time.FixedDeltaTime
+    //drag = 1 - a * Time.FixedDeltaTime / v_max
+
+    public float rotationSpeed = 200f;
+    float velX = 0f;
+
 
     // Update is called once per frame
 
-    public float speed = 0.8f;
+    private void Update()
+    {
+        velX = Input.GetAxisRaw("Horizontal");
+    }
+
     void FixedUpdate()
     {
-        rb.velocity *= 0.90f;
-
-        if (Input.GetKey(KeyCode.A))
-            rb.AddForce(Vector3.left*speed, ForceMode2D.Impulse);
-        if (Input.GetKey(KeyCode.D))
-            rb.AddForce(Vector3.right*speed, ForceMode2D.Impulse);
-        if (Input.GetKey(KeyCode.W))
-            rb.AddForce(Vector3.up*speed, ForceMode2D.Impulse);
-        if (Input.GetKey(KeyCode.S))
-            rb.AddForce(Vector3.down*speed, ForceMode2D.Impulse);
+        transform.Translate(Vector2.up * speed * Time.fixedDeltaTime, Space.Self);
+        transform.Rotate(Vector3.forward * -velX * rotationSpeed * Time.fixedDeltaTime);
     }
 
 }

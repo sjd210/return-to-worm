@@ -52,14 +52,14 @@ public class SwarmMovement : MonoBehaviour
                     continue;
                 }
 
-                swarm[i].rb.velocity =  0.95f*swarm[i].rb.velocity + 0.05f*swarm[j].rb.velocity; 
+                //swarm[i].rb.velocity =  0.95f*swarm[i].rb.velocity + 0.05f*swarm[j].rb.velocity; 
             }
 
-            Vector2 x = swarm[0].rb.position - swarm[i].rb.position;
+            //Vector2 x = swarm[0].rb.position - swarm[i].rb.position;
 
-            if(x.magnitude > close_constant){
-                swarm[i].rb.AddForce(x.normalized*head_attraction_constant, ForceMode2D.Impulse);
-            }
+            //if(x.magnitude > close_constant){
+            //    swarm[i].rb.AddForce(x.normalized*head_attraction_constant, ForceMode2D.Impulse);
+            //}
 
         }
     }
