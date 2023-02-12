@@ -5,8 +5,6 @@ using UnityEngine;
 public class WormCollider : MonoBehaviour
 {
 
-    public GameObject tiles;
-
     private void Start()
     {
         string[] prohibitedCollisions = {"Enemy", "Wall", "Worm"};

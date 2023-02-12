@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7977007571226344206}
   - component: {fileID: 6788861194093769234}
   - component: {fileID: 3580017691603689071}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BadgerData
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,10 +105,11 @@ MonoBehaviour:
   blood: {fileID: 4568196754374333148, guid: 80c47beefd87ff9408f7ee9a4645b705, type: 3}
   rb: {fileID: 6480673099551411341}
   animator: {fileID: 4075869994665356044}
-  wormSpawInstance: {fileID: 3097069838646407184, guid: 467571058f10fe3488231b7c253fd43f, type: 3}
+  swarm: {fileID: 0}
   worm: {fileID: 0}
   blood_noise: {fileID: 7977007571226344206}
   _blood_noise: {fileID: 8300000, guid: 9bf84ca14f0cb414ca4099c0e38972bd, type: 3}
+  no_worms: 3
 --- !u!58 &8828306559972880292
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -350,6 +351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aud: {fileID: 7977007571226344206}
+  dead_sound: {fileID: 8300000, guid: c35846b0c46f5c64893fe5ab39cf4cc4, type: 3}
 --- !u!1 &6480673099551411340
 GameObject:
   m_ObjectHideFlags: 0
