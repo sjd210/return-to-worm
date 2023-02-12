@@ -5261,6 +5261,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3097069838646407191, guid: 467571058f10fe3488231b7c253fd43f, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3097069838646407191, guid: 467571058f10fe3488231b7c253fd43f, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -29802,6 +29806,10 @@ PrefabInstance:
       propertyPath: swarm
       value: 
       objectReference: {fileID: 2074806893}
+    - target: {fileID: 5920591669361166251, guid: 2b66316bddcf1e54fb52c40d600cd738, type: 3}
+      propertyPath: no_worms
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 6480673099551411336, guid: 2b66316bddcf1e54fb52c40d600cd738, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -29889,7 +29897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  speed: 3
+  speed: 10
   rotationSpeed: 200
 --- !u!4 &1365914594 stripped
 Transform:
@@ -31785,6 +31793,83 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2011519631
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2074938193963882360, guid: 2b66316bddcf1e54fb52c40d600cd738, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 34de9e1efba457f40b91d17a38489b56, type: 3}
+    - target: {fileID: 5920591669361166251, guid: 2b66316bddcf1e54fb52c40d600cd738, type: 3}
+      propertyPath: swarm
+      value: 
+      objectReference: {fileID: 2074806893}
+    - target: {fileID: 5920591669361166251, guid: 2b66316bddcf1e54fb52c40d600cd738, type: 3}
+      propertyPath: no_worms
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480673099551411336, guid: 2b66316bddcf1e54fb52c40d600cd738, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480673099551411336, guid: 2b66316bddcf1e54fb52c40d600cd738, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480673099551411336, guid: 2b66316bddcf1e54fb52c40d600cd738, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480673099551411336, guid: 2b66316bddcf1e54fb52c40d600cd738, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480673099551411336, guid: 2b66316bddcf1e54fb52c40d600cd738, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480673099551411336, guid: 2b66316bddcf1e54fb52c40d600cd738, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480673099551411336, guid: 2b66316bddcf1e54fb52c40d600cd738, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480673099551411336, guid: 2b66316bddcf1e54fb52c40d600cd738, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480673099551411336, guid: 2b66316bddcf1e54fb52c40d600cd738, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480673099551411336, guid: 2b66316bddcf1e54fb52c40d600cd738, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480673099551411336, guid: 2b66316bddcf1e54fb52c40d600cd738, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480673099551411340, guid: 2b66316bddcf1e54fb52c40d600cd738, type: 3}
+      propertyPath: m_Name
+      value: Badger (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480673099551411343, guid: 2b66316bddcf1e54fb52c40d600cd738, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480673099551411343, guid: 2b66316bddcf1e54fb52c40d600cd738, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 95523847
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2b66316bddcf1e54fb52c40d600cd738, type: 3}
 --- !u!1 &2074806892
 GameObject:
   m_ObjectHideFlags: 0
@@ -31818,13 +31903,16 @@ MonoBehaviour:
   swarm:
   - {fileID: 1365914587}
   wormSpawInstance: {fileID: 3097069838646407184, guid: 467571058f10fe3488231b7c253fd43f, type: 3}
-  close_constant: 1.5
-  very_close_constant: 0.5
-  repulsion_constant: -0.1
-  high_repulsion_constant: 1
-  far_constant: 1.5
-  attraction_constant: 0.3
-  head_attraction_constant: 1
+  bloodSmall: {fileID: 0}
+  close_distance: 2
+  very_close_distance: 1
+  far_distance: 5
+  very_far_distance: 7
+  close_repulsion: 0.2
+  very_close_repulsion: 0.5
+  far_attraction: 0.1
+  very_far_attraction: 0.2
+  head_attraction: 1
 --- !u!4 &2074806894
 Transform:
   m_ObjectHideFlags: 0

@@ -33,10 +33,7 @@ public class WormMovement : Swarmite
         //transform.Rotate(Vector3.forward * -velX * rotationSpeed * Time.fixedDeltaTime);
         //transform.rotation = Quaternion.LookRotation(rb.velocity);
 
-        if (!inSwarm)
-        {
-            transform.Translate(Vector2.up * speed * Time.fixedDeltaTime, Space.Self);
-        }
+        if (!inSwarm){transform.Translate(Vector2.up * speed * Time.fixedDeltaTime, Space.Self);}
         rb.velocity *= 0.95f;
     }
 }
