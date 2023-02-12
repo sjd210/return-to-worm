@@ -12,6 +12,8 @@ public class WormMovement : Swarmite
 
     public float rotationSpeed = 200f;
     float velX = 0f;
+
+    public bool inSwarm = false;
     //public Rigidbody2D rb;
 
     /*void Start()
@@ -29,6 +31,12 @@ public class WormMovement : Swarmite
     {
         //transform.Translate(Vector2.up * speed * Time.fixedDeltaTime, Space.Self);
         //transform.Rotate(Vector3.forward * -velX * rotationSpeed * Time.fixedDeltaTime);
+        //transform.rotation = Quaternion.LookRotation(rb.velocity);
+
+        if (!inSwarm)
+        {
+            transform.Translate(Vector2.up * speed * Time.fixedDeltaTime, Space.Self);
+        }
         rb.velocity *= 0.95f;
     }
 }

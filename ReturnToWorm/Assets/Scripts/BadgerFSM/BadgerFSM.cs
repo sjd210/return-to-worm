@@ -12,7 +12,7 @@ namespace BadgerFSM
 
         public Animator animator;
 
-        public GameObject wormSpawInstance;
+        public SwarmMovement swarm;
 
         [HideInInspector]
         public GameObject worm;
@@ -50,9 +50,8 @@ namespace BadgerFSM
         public void MakeBlood()
         {
             Instantiate(blood, transform.position, Quaternion.identity);
-            Instantiate(wormSpawInstance, transform.position, Quaternion.identity);
-            Instantiate(wormSpawInstance, transform.position, Quaternion.identity);
-            Instantiate(wormSpawInstance, transform.position, Quaternion.identity);
+            swarm.AddWorm(3, transform.position);
+
             blood_noise = GetComponent<AudioSource>();
             blood_noise.PlayOneShot(_blood_noise, 0.7F);
         }
