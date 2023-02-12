@@ -30135,6 +30135,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5422778539756615669, guid: 2b66316bddcf1e54fb52c40d600cd738, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5920591669361166251, guid: 2b66316bddcf1e54fb52c40d600cd738, type: 3}
       propertyPath: swarm
       value: 
@@ -32477,13 +32481,15 @@ MonoBehaviour:
   - {fileID: 1365914587}
   wormSpawInstance: {fileID: 3097069838646407184, guid: 467571058f10fe3488231b7c253fd43f, type: 3}
   bloodSmall: {fileID: 4568196754374333148, guid: 5170a64a250799145a8674c17c92b8cd, type: 3}
-  close_constant: 1.5
-  very_close_constant: 0.5
-  repulsion_constant: -0.1
-  high_repulsion_constant: 1
-  far_constant: 1.5
-  attraction_constant: 0.3
-  head_attraction_constant: 1
+  close_distance: 1
+  very_close_distance: 0.5
+  far_distance: 1.5
+  very_far_distance: 2
+  close_repulsion: 0.1
+  very_close_repulsion: 0.5
+  far_attraction: 0.3
+  very_far_attraction: 0.1
+  head_attraction: 1
 --- !u!4 &2074806894
 Transform:
   m_ObjectHideFlags: 0
