@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SwarmMovement : MonoBehaviour
 {
@@ -12,20 +13,13 @@ public class SwarmMovement : MonoBehaviour
     public List<Tuple<Swarmite, float>> waitingForSwarm = new List<Tuple<Swarmite, float>>();
     public List<Swarmite> swarm = new List<Swarmite>();
 
-    private List<Swarmite> littleWorm = new List<Swarmite>();
-    private List<Swarmite> bigWorm = new List<Swarmite>();
+    public List<Swarmite> littleWorm = new List<Swarmite>();
+    public List<Swarmite> bigWorm = new List<Swarmite>();
     private List<Swarmite> daddyWorm = new List<Swarmite>();
 
     public GameObject wormSpawInstance;
 
     public GameObject bloodSmall;
-
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
 
     public float close_distance = 1f;
     public float very_close_distance = 0.5f;
@@ -36,6 +30,13 @@ public class SwarmMovement : MonoBehaviour
     public float far_attraction = 0.3f;
     public float very_far_attraction = 0.1f;
     public float head_attraction = 1f;
+
+    private float timeRemaining = 10f;
+
+    public GameObject wall2;
+    public GameObject wall3;
+    public GameObject wall4;
+
     void FixedUpdate()
     {
         Swarm_Update_A();
@@ -43,6 +44,27 @@ public class SwarmMovement : MonoBehaviour
 
     private void Update()
     {
+        if (littleWorm.Count + bigWorm.Count * 7 > 14)
+        {
+            wall2.SetActive(false);
+        }
+        if (littleWorm.Count + bigWorm.Count * 7 > 28)
+        {
+            wall3.SetActive(false);
+        }
+        if (littleWorm.Count + bigWorm.Count * 7 > 42)
+        {
+            wall4.SetActive(false);
+            if (timeRemaining > 0f)
+            {
+                timeRemaining -= Time.deltaTime;
+            }
+            else
+            {
+                SceneManager.LoadScene(sceneName: "Earth");
+            }
+        }
+
         for (int i = waitingForSwarm.Count - 1; i >= 0; i--)
         {
             (Swarmite Worm, float t) = waitingForSwarm[i];
@@ -54,7 +76,7 @@ public class SwarmMovement : MonoBehaviour
                 waitingForSwarm.RemoveAt(i);
             }
         }
-        int littlWormToBig = 4;
+        int littlWormToBig = 7;
         if (littleWorm.Count >= littlWormToBig)
         {
             int n = littleWorm.Count / littlWormToBig;

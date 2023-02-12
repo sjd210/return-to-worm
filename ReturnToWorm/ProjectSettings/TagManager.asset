@@ -12,6 +12,9 @@ TagManager:
   - Rock
   - Bg
   - Grav
+  - Wall2
+  - Wall3
+  - Wall4
   layers:
   - Default
   - TransparentFX

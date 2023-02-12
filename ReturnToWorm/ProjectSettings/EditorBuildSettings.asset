@@ -8,7 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TileAIV2.unity
     guid: 9f6f66928d0320d45b87a7b42857d142
+  - enabled: 1
+    path: Assets/Scenes/TileScene.unity
+    guid: 664cff323f0a9694a969a76e6ce9536a
+  - enabled: 1
+    path: Assets/Scenes/Earth.unity
+    guid: 5468ed9d5eda7a24bad74bd9b2e06f08
   m_configObjects: {}
